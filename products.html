@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | MIM Building Materials</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            900: '#14532d',
+                            950: '#052e16',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm border-b sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex-shrink-0 flex items-center gap-2">
+                        <div class="w-10 h-10 bg-brand-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">M</div>
+                        <span class="font-bold text-2xl tracking-tight text-brand-950">MIM <span class="text-brand-600">Materials</span></span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">Home</a>
+                    <a href="products.html" class="text-brand-600 font-semibold border-b-2 border-brand-600 pb-1">Products</a>
+                    <a href="about.html" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">About Us</a>
+                    <a href="contact.html" class="bg-brand-600 text-white px-5 py-2 rounded-full font-medium hover:bg-brand-700 transition-colors">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="bg-brand-950 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl font-extrabold text-white tracking-tight mb-4">Our Product Range</h1>
+            <p class="text-xl text-brand-100 max-w-2xl mx-auto font-light">Explore our comprehensive selection of high-quality building materials, electricals, and hardware tools.</p>
+        </div>
+    </div>
+
+    <!-- Product Sections -->
+    <div class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Electrical Items -->
+            <div id="electrical" class="mb-20 scroll-mt-24">
+                <div class="flex flex-col md:flex-row items-center gap-10">
+                    <div class="w-full md:w-1/3">
+                        <img src="images/electrical_items.png" alt="Electrical Items" class="rounded-2xl shadow-xl w-full object-cover h-64 md:h-80">
+                    </div>
+                    <div class="w-full md:w-2/3">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                            <span class="w-10 h-10 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                            </span>
+                            Electrical & Lighting
+                        </h2>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 flex items-center gap-3 hover:border-brand-300 transition-colors">
+                                <div class="w-2 h-2 rounded-full bg-brand-500"></div><span class="font-medium">LED Bulbs (10W, 12W, 25W)</span>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 flex items-center gap-3 hover:border-brand-300 transition-colors">
+                                <div class="w-2 h-2 rounded-full bg-brand-500"></div><span class="font-medium">Panel Lights</span>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 flex items-center gap-3 hover:border-brand-300 transition-colors">
+                                <div class="w-2 h-2 rounded-full bg-brand-500"></div><span class="font-medium">Adapters & Accessories</span>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 flex items-center gap-3 hover:border-brand-300 transition-colors">
+                                <div class="w-2 h-2 rounded-full bg-brand-500"></div><span class="font-medium">Exhaust 8" Fan</span>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 flex items-center gap-3 hover:border-brand-300 transition-colors">
+                                <div class="w-2 h-2 rounded-full bg-brand-500"></div><span class="font-medium">Ventilating Fans</span>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 flex items-center gap-3 hover:border-brand-300 transition-colors">
+                                <div class="w-2 h-2 rounded-full bg-brand-500"></div><span class="font-medium">General Electric Items</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-gray-200 mb-20">
+
+            <!-- Sanitary Items -->
+            <div id="sanitary" class="mb-20 scroll-mt-24">
+                <div class="flex flex-col md:flex-row-reverse items-center gap-10">
+                    <div class="w-full md:w-1/3">
+                        <img src="images/sanitary_fittings.png" alt="Sanitary Items" class="rounded-2xl shadow-xl w-full object-cover h-64 md:h-80">
+                    </div>
+                    <div class="w-full md:w-2/3">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                            <span class="w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                            </span>
+                            Sanitary & Plumbing
+                        </h2>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 flex items-center gap-3 hover:border-blue-300 transition-colors">
+                                <div class="w-2 h-2 rounded-full bg-blue-500"></div><span class="font-medium">WC Fittings</span>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 flex items-center gap-3 hover:border-blue-300 transition-colors">
+                                <div class="w-2 h-2 rounded-full bg-blue-500"></div><span class="font-medium">Premium Bath Fittings</span>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 flex items-center gap-3 hover:border-blue-300 transition-colors">
+                                <div class="w-2 h-2 rounded-full bg-blue-500"></div><span class="font-medium">Pipe Fittings</span>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 flex items-center gap-3 hover:border-blue-300 transition-colors">
+                                <div class="w-2 h-2 rounded-full bg-blue-500"></div><span class="font-medium">PVC Pipe Items</span>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 flex items-center gap-3 hover:border-blue-300 transition-colors">
+                                <div class="w-2 h-2 rounded-full bg-blue-500"></div><span class="font-medium">General Sanitary Items</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-gray-200 mb-20">
+
+            <!-- Hardware & Tools -->
+            <div id="hardware" class="mb-20 scroll-mt-24">
+                <div class="flex flex-col md:flex-row items-center gap-10">
+                    <div class="w-full md:w-1/3">
+                        <img src="images/tools_hardware.png" alt="Hardware and Tools" class="rounded-2xl shadow-xl w-full object-cover h-64 md:h-80">
+                    </div>
+                    <div class="w-full md:w-2/3">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                            <span class="w-10 h-10 rounded-full bg-orange-100 text-orange-600 flex items-center justify-center">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            </span>
+                            Hardware & Tools
+                        </h2>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 flex items-center gap-3 hover:border-orange-300 transition-colors">
+                                <div class="w-2 h-2 rounded-full bg-orange-500"></div><span class="font-medium">Heavy Duty Tool Boxes</span>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 flex items-center gap-3 hover:border-orange-300 transition-colors">
+                                <div class="w-2 h-2 rounded-full bg-orange-500"></div><span class="font-medium">Door Lock Items</span>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 flex items-center gap-3 hover:border-orange-300 transition-colors">
+                                <div class="w-2 h-2 rounded-full bg-orange-500"></div><span class="font-medium">Hand Tools</span>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 flex items-center gap-3 hover:border-orange-300 transition-colors">
+                                <div class="w-2 h-2 rounded-full bg-orange-500"></div><span class="font-medium">Power Tool Accessories</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-gray-200 mb-20">
+
+            <!-- Safety Items -->
+            <div id="safety" class="mb-10 scroll-mt-24">
+                <div class="flex flex-col md:flex-row-reverse items-center gap-10">
+                    <div class="w-full md:w-1/3">
+                        <img src="images/safety_items.png" alt="Safety Items" class="rounded-2xl shadow-xl w-full object-cover h-64 md:h-80">
+                    </div>
+                    <div class="w-full md:w-2/3">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                            <span class="w-10 h-10 rounded-full bg-yellow-100 text-yellow-600 flex items-center justify-center">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                            </span>
+                            Safety Gear
+                        </h2>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 flex items-center gap-3 hover:border-yellow-400 transition-colors">
+                                <div class="w-2 h-2 rounded-full bg-yellow-500"></div><span class="font-medium">Safety Helmets & Hats</span>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 flex items-center gap-3 hover:border-yellow-400 transition-colors">
+                                <div class="w-2 h-2 rounded-full bg-yellow-500"></div><span class="font-medium">High Visibility Vests</span>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 flex items-center gap-3 hover:border-yellow-400 transition-colors">
+                                <div class="w-2 h-2 rounded-full bg-yellow-500"></div><span class="font-medium">Protective Gloves</span>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 flex items-center gap-3 hover:border-yellow-400 transition-colors">
+                                <div class="w-2 h-2 rounded-full bg-yellow-500"></div><span class="font-medium">Safety Boots</span>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 flex items-center gap-3 hover:border-yellow-400 transition-colors">
+                                <div class="w-2 h-2 rounded-full bg-yellow-500"></div><span class="font-medium">General Safety Items</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-brand-950 text-gray-300 py-12 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm text-gray-500">
+            &copy; 2026 MIM Building Materials. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
